@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home {
+  height: 92vh;
+}
+.footer {
+  box-shadow: 0 -10px 30px rgba(208, 213, 217);
+}
