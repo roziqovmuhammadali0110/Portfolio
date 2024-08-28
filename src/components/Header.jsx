@@ -24,7 +24,7 @@ function Header({ darkMode, setDarkMode }) {
           className="px-[1%] flex items-center justify-around w-full"
           data-aos="fade-up">
           <div data-aos="fade-up">
-            <a href="/home">
+            <a href="/">
               <img
                 src={logo}
                 alt="logo"
@@ -37,11 +37,9 @@ function Header({ darkMode, setDarkMode }) {
             <ul className="flex space-x-5">
               <li data-aos="fade-down" data-aos-delay="100">
                 <Link
-                  to="/home"
+                  to="/"
                   className={`hover:text-[#222222] hover:underline ${
-                    location.pathname === "/home"
-                      ? "text-[#222222] underline"
-                      : ""
+                    location.pathname === "/" ? "text-[#222222] underline" : ""
                   }`}>
                   Home
                 </Link>
@@ -103,15 +101,17 @@ function Header({ darkMode, setDarkMode }) {
               </li>
             </ul>
           </nav>
-          <button
-            onClick={toggleDarkMode}
-            className="p-2 bg-gray-700 dark:bg-gray-700 rounded-2xl">
-            {darkMode ? <MdLightMode /> : <MdOutlineDarkMode />}
-          </button>
-          <div className="w-[180px] h-12 flex items-center justify-center font-bold bg-neutral-700 rounded-xl">
-            <button onClick={openModal} className="text-white">
-              Contact
+          <div className="flex items-center gap-3">
+            <button
+              onClick={toggleDarkMode}
+              className="p-2 bg-gray-700 dark:bg-gray-700 rounded-2xl">
+              {darkMode ? <MdLightMode /> : <MdOutlineDarkMode />}
             </button>
+            <div className="w-[180px] h-12 flex items-center justify-center font-bold bg-neutral-700 rounded-xl">
+              <button onClick={openModal} className="text-white">
+                Contact
+              </button>
+            </div>
           </div>
         </div>
       </header>
