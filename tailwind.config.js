@@ -17,13 +17,13 @@ export default {
       slideIn: "slideIn 1s ease-in-out"
     },
     screens: {
-      xs: "320px", // Maxsus xs breakpoint (mobil qurilmalar uchun)
-      sm: "380px", // Maxsus sm breakpoint (kichik mobil qurilmalar uchun)
-      md: "768px", // Standart md breakpoint (planshetlar uchun)
-      lg: "1024px", // Standart lg breakpoint (kichik noutbuklar uchun)
-      xl: "1280px", // Standart xl breakpoint (katta ekranli noutbuklar uchun)
-      "2xl": "1536px", // Standart 2xl breakpoint (katta monitorlar uchun)
-      "3xl": "1440px" // Maxsus 3xl breakpoint (oraliq katta ekranlar uchun)
+      xs: "320px",
+      sm: "380px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+      "3xl": "1440px"
     }
   },
 

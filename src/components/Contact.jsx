@@ -6,7 +6,9 @@ function Contact() {
       id="contact"
       className="py-12 dark:bg-gray-900 dark:text-white bg-gray-100 h-[92vh] flex items-center justify-center">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-6" data-aos="fade-up">
+        <h2
+          className="text-3xl font-bold text-[#212529] text-center mb-6"
+          data-aos="fade-up">
           Contact
         </h2>
         <form

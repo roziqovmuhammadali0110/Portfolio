@@ -19,7 +19,7 @@ function Header({ darkMode, setDarkMode }) {
 
   return (
     <>
-      <header className="bg-[#E9E8E6] dark:bg-gray-900 dark:text-white font-medium text-[#ABABAA] py-1 shadow-xl shadow-zinc-300 fixed top-0 left-0 right-0 z-50">
+      <header className="bg-[#E9E8E6] dark:bg-gray-900 dark:text-white font-medium text-[#ABABAA] py-1 shadow-xl dark:shadow-zinc-700 fixed top-0 left-0 right-0 z-50">
         <div
           className="px-[1%] flex items-center justify-around w-full"
           data-aos="fade-up">
