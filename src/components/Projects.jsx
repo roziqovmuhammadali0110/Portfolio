@@ -7,7 +7,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="py-12 dark:bg-gray-900 dark:text-white flex items-center justify-center px-[5%]">
+      className="py-12 dark:bg-gray-900 dark:text-white bg-gray-300 flex items-center justify-center px-[5%]">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-6" data-aos="fade-up">
           Projects

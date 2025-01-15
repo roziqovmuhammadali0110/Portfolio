@@ -2,7 +2,7 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="py-11 dark:bg-gray-900 dark:text-white flex items-center justify-center h-[92vh] bg-gray-100 px-[8%]">
+      className="py-11 dark:bg-gray-900 dark:text-white flex items-center justify-center h-[92vh] bg-gray-300 px-[8%]">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-6" data-aos="fade-up">
           Skills

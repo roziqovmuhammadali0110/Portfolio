@@ -4,7 +4,7 @@ function About() {
   return (
     <section
       id="about"
-      className="pt-12 dark:bg-gray-900 dark:text-white bg-gray-100 h-[92vh] flex items-center justify-center">
+      className="pt-12 dark:bg-gray-900 dark:text-white bg-gray-300 h-[92vh] flex items-center justify-center">
       <div className="px-[15%]">
         <h2
           className="text-[50px] font-bold text-center mb-6"
@@ -58,7 +58,7 @@ function About() {
                 <span className="text-[19px]"> +998880391211</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="font-bold text-[20px]">PhEmailone: </span>
+                <span className="font-bold text-[20px]">PhoneEmail: </span>
                 <span className="text-[19px]">mroziqov494@gmail.com</span>
               </div>
             </div>

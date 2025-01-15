@@ -2,9 +2,11 @@ function Experience() {
   return (
     <section
       id="experience"
-      className="py-12 dark:bg-gray-900 dark:text-white h-[92vh] space-y-4 flex items-center justify-center flex-col px-5">
+      className="py-12 dark:bg-gray-900 bg-gray-300 dark:text-white h-[92vh] space-y-4 flex items-center justify-center flex-col px-5">
       <div className="flex items-center justify-center pr-20">
-        <h2 className="text-3xl font-bold text-center mb-6" data-aos="fade-up">
+        <h2
+          className="text-3xl border-b-4 border-[#34B7A7] font-bold text-center mb-6"
+          data-aos="fade-up">
           Experience
         </h2>
       </div>

@@ -4,11 +4,21 @@
 @tailwind components;
 @tailwind utilities;
 
-.home {
+/* .home {
   height: 92vh;
   background-image: url("https://st.focusedcollection.com/14228810/i/1800/focused_168438264-stock-photo-hands-typing-on-laptop-keyboard.jpg");
   background-size: cover;
+} */
+.home {
+  height: 92vh;
+  background-image: url("https://fotoblik.ru/wp-content/uploads/2023/09/fon-dlia-klaviatury-1.webp");
+  background-size: cover;
 }
+/* .home {
+  height: 92vh;
+  background-image: url("https://fotoblik.ru/wp-content/uploads/2023/09/ryzhii-kot-1.webp");
+  background-size: cover;
+} */
 /* .footer {
   box-shadow: 0 -10px 30px rgba(208, 213, 217);
 } */

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/logoSmall.jpg";
+import logo from "../assets/Roziqov4.png";
 import { MdOutlineDarkMode, MdLightMode } from "react-icons/md";
 import Modal from "./Modal";
 import ContactForm from "./ContactForm";
@@ -19,17 +19,13 @@ function Header({ darkMode, setDarkMode }) {
 
   return (
     <>
-      <header className="bg-[#E9E8E6] dark:bg-gray-900 dark:text-white font-medium text-[#ABABAA] py-1 shadow-xl dark:shadow-zinc-700 fixed top-0 left-0 right-0 z-50">
+      <header className="bg-[#E9E8E6] h-[70px] flex items-center justify-center dark:bg-gray-800 dark:text-white font-medium text-[#ABABAA]  dark:shadow-zinc-700 fixed top-0 left-0 right-0 z-50">
         <div
           className="px-[1%] flex items-center justify-around w-full"
           data-aos="fade-up">
-          <div data-aos="fade-up">
+          <div data-aos="fade-up" className="w-32">
             <a href="/">
-              <img
-                src={logo}
-                alt="logo"
-                className="w-20 rounded-[50%] shadow-2xl"
-              />
+              <img src={logo} alt="logo" className="w-full" />
             </a>
           </div>
 
@@ -38,7 +34,7 @@ function Header({ darkMode, setDarkMode }) {
               <li data-aos="fade-down" data-aos-delay="100">
                 <Link
                   to="/"
-                  className={`hover:text-[#222222] hover:underline ${
+                  className={`dark:text-slate-400 dark:hover:dark:text-slate-200 hover:text-[#222222] hover:underline ${
                     location.pathname === "/" ? "text-[#222222] underline" : ""
                   }`}>
                   Home
@@ -47,7 +43,7 @@ function Header({ darkMode, setDarkMode }) {
               <li data-aos="fade-down" data-aos-delay="200">
                 <Link
                   to="/about"
-                  className={`hover:text-[#222222] hover:underline ${
+                  className={`dark:text-slate-400 dark:hover:dark:text-slate-200 hover:text-[#222222] hover:underline ${
                     location.pathname === "/about"
                       ? "text-[#222222] underline"
                       : ""
@@ -58,7 +54,7 @@ function Header({ darkMode, setDarkMode }) {
               <li data-aos="fade-down" data-aos-delay="300">
                 <Link
                   to="/experience"
-                  className={`hover:text-[#222222] hover:underline ${
+                  className={`dark:text-slate-400 dark:hover:dark:text-slate-200 hover:text-[#222222] hover:underline ${
                     location.pathname === "/experience"
                       ? "text-[#222222] underline"
                       : ""
@@ -69,7 +65,7 @@ function Header({ darkMode, setDarkMode }) {
               <li data-aos="fade-down" data-aos-delay="400">
                 <Link
                   to="/skills"
-                  className={`hover:text-[#222222] hover:underline ${
+                  className={`dark:text-slate-400 dark:hover:dark:text-slate-200 hover:text-[#222222] hover:underline ${
                     location.pathname === "/skills"
                       ? "text-[#222222] underline"
                       : ""
@@ -80,7 +76,7 @@ function Header({ darkMode, setDarkMode }) {
               <li data-aos="fade-down" data-aos-delay="500">
                 <Link
                   to="/projects"
-                  className={`hover:text-[#222222] hover:underline ${
+                  className={`dark:text-slate-400 dark:hover:dark:text-slate-200 hover:text-[#222222] hover:underline ${
                     location.pathname === "/projects"
                       ? "text-[#222222] underline"
                       : ""
@@ -91,7 +87,7 @@ function Header({ darkMode, setDarkMode }) {
               <li data-aos="fade-down" data-aos-delay="600">
                 <Link
                   to="/contact"
-                  className={`hover:text-[#222222] hover:underline ${
+                  className={`dark:text-slate-400 dark:hover:dark:text-slate-200 hover:text-[#222222] hover:underline ${
                     location.pathname === "/contact"
                       ? "text-[#222222] underline"
                       : ""
@@ -104,7 +100,7 @@ function Header({ darkMode, setDarkMode }) {
           <div className="flex items-center gap-3">
             <button
               onClick={toggleDarkMode}
-              className="p-2 bg-gray-700 dark:bg-gray-700 rounded-2xl">
+              className="p-2 bg-gray-700  dark:bg-gray-700 rounded-2xl">
               {darkMode ? <MdLightMode /> : <MdOutlineDarkMode />}
             </button>
             <div className="w-[180px] h-12 flex items-center justify-center font-bold bg-neutral-700 rounded-xl">

@@ -1,6 +1,4 @@
-// App.jsx
-
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -10,12 +8,13 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Crosshair from "./components/CrosShair";
 
 function App() {
+  const containerRef = useRef(null);
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    // darkMode holatini localStorage orqali saqlash
     const savedMode = localStorage.getItem("darkMode");
     if (savedMode) {
       setDarkMode(JSON.parse(savedMode));
@@ -23,7 +22,6 @@ function App() {
   }, []);
 
   useEffect(() => {
-    // darkMode holatini document.body ga qo'llash
     if (darkMode) {
       document.body.classList.add("dark");
       localStorage.setItem("darkMode", true);
@@ -34,8 +32,9 @@ function App() {
   }, [darkMode]);
 
   return (
-    <>
+    <div ref={containerRef}>
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Crosshair containerRef={containerRef} />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -45,7 +44,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 }
 

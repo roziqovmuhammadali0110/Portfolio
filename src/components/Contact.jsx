@@ -4,12 +4,12 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="py-12 dark:bg-gray-900 dark:text-white bg-gray-100 h-[92vh] flex items-center justify-center">
+      className="py-12 dark:bg-gray-900 dark:text-white bg-gray-300 h-[92vh] flex items-center justify-center">
       <div className="container mx-auto">
         <h2
           className="text-3xl font-bold text-[#212529] text-center mb-6"
-          data-aos="fade-up">
-          Contact
+          data-aos="fade-up ">
+          <span className="border-b-4 border-[#34B7A7]">Contact</span>
         </h2>
         <form
           className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md"
@@ -22,16 +22,18 @@ function Contact() {
             <input
               type="text"
               id="name"
+              required
               className="w-full border border-gray-300 p-2 rounded-lg"
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="email" className="block text-gray-700">
-              Email
+            <label htmlFor="tel" className="block text-gray-700">
+              Phone
             </label>
             <input
-              type="email"
-              id="email"
+              type="tel"
+              id="tel"
+              required
               className="w-full border border-gray-300 p-2 rounded-lg"
             />
           </div>
