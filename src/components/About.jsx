@@ -46,7 +46,7 @@ function About() {
               </div>
               <div className="flex items-center gap-2">
                 <span className="font-bold text-[20px]">Age: </span>
-                <span className="text-[19px]"> 24</span>
+                <span className="text-[19px]"> 25</span>
               </div>
             </div>
             <div
@@ -58,7 +58,7 @@ function About() {
                 <span className="text-[19px]"> +998880391211</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="font-bold text-[20px]">PhoneEmail: </span>
+                <span className="font-bold text-[20px]">Email: </span>
                 <span className="text-[19px]">mroziqov494@gmail.com</span>
               </div>
             </div>
@@ -93,8 +93,8 @@ function About() {
                 <span className="text-[19px]"> Tashkent</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="font-bold text-[20px]">Freelance:</span>
-                <span className="text-[19px]"> Available</span>
+                <span className="font-bold text-[20px]">Mars IT School:</span>
+                <span className="text-[19px]"> Teacher</span>
               </div>
             </div>
           </div>
