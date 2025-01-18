@@ -46,7 +46,7 @@ function About() {
               </div>
               <div className="flex items-center gap-2">
                 <span className="font-bold text-[20px]">Age: </span>
-                <span className="text-[19px]"> 25</span>
+                <span className="text-[19px]"> 26</span>
               </div>
             </div>
             <div
